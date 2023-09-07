@@ -8,7 +8,7 @@ Database Design Document is available [here](<EDTS DDD.pdf>)
 
  1. Set up a PostgreSQL database and run [DBCreateScript.sql](DBCreateScript.sql) to create
     the database designed for this back-end.
- 2. Alter /src/main/resources/application.properties to reflect your PostgreSQL database information:\
+ 2. Alter [/src/main/resources/application.properties](/src/main/resources/application.properties) to reflect your PostgreSQL database information:\
     `spring.datasource.url=jdbc:postgresql://localhost:5432/EDTSEmployees`\
     `spring.datasource.username=my_user`\
     `spring.datasource.password=my_password`
