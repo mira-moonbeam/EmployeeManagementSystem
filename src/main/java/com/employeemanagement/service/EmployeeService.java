@@ -19,12 +19,12 @@ public class EmployeeService {
     }
 
     public List<Employee> showEmployees(String name, Long id, List<Long> ids, Integer grade) {
-        if (name != null) {
-            return employeeRepository.findByName(name);
-        }
         if (id != null) {
             Optional<Employee> optionalEmployee = employeeRepository.findById(id);
             return optionalEmployee.map(Collections::singletonList).orElse(Collections.emptyList());
+        }
+        if (name != null) {
+            return employeeRepository.findByName(name);
         }
         if (ids != null) {
             return employeeRepository.findAllById(ids);

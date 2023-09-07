@@ -96,7 +96,7 @@ public class EmployeeController
     // Failure: HTTP 400 (Bad Request)
     //     Response Body: Error message indicating the employee does not exist.
     @PutMapping("/update-employee")
-    public ResponseEntity<?> updateEmployee(@RequestParam long employee_id, @RequestBody Employee newEmployeeDetails) {
+    public ResponseEntity<?> updateEmployee(@RequestParam(required = true) long employee_id, @RequestBody Employee newEmployeeDetails) {
         Optional<Employee> updatedEmployee = employeeService.updateEmployee(employee_id, newEmployeeDetails);
         if (updatedEmployee.isPresent()) {
             return ResponseEntity.ok(updatedEmployee.get());
