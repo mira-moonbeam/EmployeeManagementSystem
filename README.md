@@ -1,8 +1,8 @@
 # EDTS Back-end Engineer Technical Assessment
 
 Written by Daniel Loewito.\
-API Documentation is available [here](https://documenter.getpostman.com/view/20788941/2s9YBz3aay "https://documenter.getpostman.com/view/20788941/2s9YBz3aay").
-Database Design Document is available [here](EDTSDDD.pdf)
+API Documentation is available [here](https://documenter.getpostman.com/view/20788941/2s9YBz3aay "https://documenter.getpostman.com/view/20788941/2s9YBz3aay").\
+Database Design Document is available [here](<EDTS DDD.pdf>)
 
 ## Set-Up
 
